@@ -73,9 +73,59 @@ namespace kursgost.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap @__G_O_R____11__removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("__G_O_R____11_-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap @__G_O_R____4__removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("__G_O_R____4_-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap @__G_O_R____5__removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("__G_O_R____5_-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap @__G_O_R____6__removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("__G_O_R____6_-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _172626_user_male_icon {
+            get {
+                object obj = ResourceManager.GetObject("172626_user_male_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _352523_lock_icon {
+            get {
+                object obj = ResourceManager.GetObject("352523_lock_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

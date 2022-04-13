@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlNav = new System.Windows.Forms.Panel();
+            this.Setings = new System.Windows.Forms.Button();
             this.Contact = new System.Windows.Forms.Button();
             this.bontCalendar = new System.Windows.Forms.Button();
             this.botnAnalitycs = new System.Windows.Forms.Button();
@@ -37,16 +39,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Setings = new System.Windows.Forms.Button();
-            this.pnlNav = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(39)))), ((int)(((byte)(44)))));
+            this.panel1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panel1.Controls.Add(this.pnlNav);
             this.panel1.Controls.Add(this.Setings);
             this.panel1.Controls.Add(this.Contact);
@@ -57,18 +60,43 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(186, 577);
+            this.panel1.Size = new System.Drawing.Size(186, 601);
             this.panel1.TabIndex = 0;
+            // 
+            // pnlNav
+            // 
+            this.pnlNav.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.pnlNav.Location = new System.Drawing.Point(0, 193);
+            this.pnlNav.Name = "pnlNav";
+            this.pnlNav.Size = new System.Drawing.Size(10, 100);
+            this.pnlNav.TabIndex = 3;
+            // 
+            // Setings
+            // 
+            this.Setings.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.Setings.FlatAppearance.BorderSize = 0;
+            this.Setings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Setings.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Setings.ForeColor = System.Drawing.Color.White;
+            this.Setings.Location = new System.Drawing.Point(0, 552);
+            this.Setings.Name = "Setings";
+            this.Setings.Size = new System.Drawing.Size(186, 49);
+            this.Setings.TabIndex = 5;
+            this.Setings.Text = "Setings";
+            this.Setings.UseVisualStyleBackColor = true;
+            this.Setings.Click += new System.EventHandler(this.Setings_Click);
+            this.Setings.Leave += new System.EventHandler(this.Setings_Leave);
             // 
             // Contact
             // 
+            this.Contact.Dock = System.Windows.Forms.DockStyle.Top;
             this.Contact.FlatAppearance.BorderSize = 0;
             this.Contact.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Contact.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Contact.ForeColor = System.Drawing.Color.White;
-            this.Contact.Location = new System.Drawing.Point(0, 316);
+            this.Contact.Location = new System.Drawing.Point(0, 317);
             this.Contact.Name = "Contact";
-            this.Contact.Size = new System.Drawing.Size(186, 34);
+            this.Contact.Size = new System.Drawing.Size(186, 44);
             this.Contact.TabIndex = 4;
             this.Contact.Text = "Contact Us";
             this.Contact.UseVisualStyleBackColor = true;
@@ -77,13 +105,14 @@
             // 
             // bontCalendar
             // 
+            this.bontCalendar.Dock = System.Windows.Forms.DockStyle.Top;
             this.bontCalendar.FlatAppearance.BorderSize = 0;
             this.bontCalendar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bontCalendar.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bontCalendar.ForeColor = System.Drawing.Color.White;
-            this.bontCalendar.Location = new System.Drawing.Point(0, 276);
+            this.bontCalendar.Location = new System.Drawing.Point(0, 277);
             this.bontCalendar.Name = "bontCalendar";
-            this.bontCalendar.Size = new System.Drawing.Size(186, 34);
+            this.bontCalendar.Size = new System.Drawing.Size(186, 40);
             this.bontCalendar.TabIndex = 3;
             this.bontCalendar.Text = "Calendar";
             this.bontCalendar.UseVisualStyleBackColor = true;
@@ -92,13 +121,14 @@
             // 
             // botnAnalitycs
             // 
+            this.botnAnalitycs.Dock = System.Windows.Forms.DockStyle.Top;
             this.botnAnalitycs.FlatAppearance.BorderSize = 0;
             this.botnAnalitycs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botnAnalitycs.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botnAnalitycs.ForeColor = System.Drawing.Color.White;
-            this.botnAnalitycs.Location = new System.Drawing.Point(0, 236);
+            this.botnAnalitycs.Location = new System.Drawing.Point(0, 234);
             this.botnAnalitycs.Name = "botnAnalitycs";
-            this.botnAnalitycs.Size = new System.Drawing.Size(186, 34);
+            this.botnAnalitycs.Size = new System.Drawing.Size(186, 43);
             this.botnAnalitycs.TabIndex = 2;
             this.botnAnalitycs.Text = "Analytics";
             this.botnAnalitycs.UseVisualStyleBackColor = true;
@@ -107,13 +137,14 @@
             // 
             // botnDashboard
             // 
+            this.botnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
             this.botnDashboard.FlatAppearance.BorderSize = 0;
             this.botnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botnDashboard.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botnDashboard.ForeColor = System.Drawing.Color.White;
-            this.botnDashboard.Location = new System.Drawing.Point(0, 196);
+            this.botnDashboard.Location = new System.Drawing.Point(0, 190);
             this.botnDashboard.Name = "botnDashboard";
-            this.botnDashboard.Size = new System.Drawing.Size(186, 34);
+            this.botnDashboard.Size = new System.Drawing.Size(186, 44);
             this.botnDashboard.TabIndex = 1;
             this.botnDashboard.Text = "Dashboard";
             this.botnDashboard.UseVisualStyleBackColor = true;
@@ -122,6 +153,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox1);
@@ -155,7 +187,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::kursgost.Properties.Resources.@__G_O_R____4__removebg_preview;
+            this.pictureBox1.Image = global::kursgost.Properties.Resources.@__G_O_R____5__removebg_preview;
             this.pictureBox1.Location = new System.Drawing.Point(45, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(90, 95);
@@ -163,45 +195,45 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // Setings
+            // dataGridView1
             // 
-            this.Setings.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.Setings.FlatAppearance.BorderSize = 0;
-            this.Setings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Setings.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Setings.ForeColor = System.Drawing.Color.White;
-            this.Setings.Location = new System.Drawing.Point(0, 539);
-            this.Setings.Name = "Setings";
-            this.Setings.Size = new System.Drawing.Size(186, 38);
-            this.Setings.TabIndex = 5;
-            this.Setings.Text = "Setings";
-            this.Setings.UseVisualStyleBackColor = true;
-            this.Setings.Click += new System.EventHandler(this.Setings_Click);
-            this.Setings.Leave += new System.EventHandler(this.Setings_Leave);
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.DarkSlateGray;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(203, 34);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.RowTemplate.Height = 28;
+            this.dataGridView1.Size = new System.Drawing.Size(729, 367);
+            this.dataGridView1.TabIndex = 1;
             // 
-            // pnlNav
+            // panel3
             // 
-            this.pnlNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
-            this.pnlNav.Location = new System.Drawing.Point(0, 193);
-            this.pnlNav.Name = "pnlNav";
-            this.pnlNav.Size = new System.Drawing.Size(3, 100);
-            this.pnlNav.TabIndex = 3;
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Location = new System.Drawing.Point(59, 165);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(52, 1);
+            this.panel3.TabIndex = 4;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
-            this.ClientSize = new System.Drawing.Size(951, 577);
+            this.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.ClientSize = new System.Drawing.Size(966, 601);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "hotel";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -219,6 +251,8 @@
         private System.Windows.Forms.Button botnAnalitycs;
         private System.Windows.Forms.Panel pnlNav;
         private System.Windows.Forms.Button Setings;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Panel panel3;
     }
 }
 
