@@ -35,15 +35,6 @@ namespace kursgost
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
 
-
-
-        }
-
-
-
-        //кодировка меню навигации
-        private void botnDashboard_Click(object sender, EventArgs e)
-        {
             pnlNav.Height = botnDashboard.Height;
             pnlNav.Top = botnDashboard.Top;
             pnlNav.Left = botnDashboard.Left;
@@ -51,7 +42,26 @@ namespace kursgost
 
         }
 
-        private void botnAnalitycs_Click(object sender, EventArgs e)
+
+
+        //кодировка меню навигации
+        private void botnDashboard_Click(object sender, EventArgs e)//доступные номера
+        {
+            pnlNav.Height = botnDashboard.Height;
+            pnlNav.Top = botnDashboard.Top;
+            pnlNav.Left = botnDashboard.Left;
+            botnDashboard.BackColor = Color.FromArgb(0, 128, 128);
+
+            lbtitle.Text = "Доступные номера";
+            this.plFormLoader.Controls.Clear();
+            Frm1dn Frm1dn_Vrb = new Frm1dn() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            Frm1dn_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.plFormLoader.Controls.Add(Frm1dn_Vrb);
+            Frm1dn_Vrb.Show();
+
+        }
+
+        private void botnAnalitycs_Click(object sender, EventArgs e)//все номера
         {
             pnlNav.Height = botnAnalitycs.Height;
             pnlNav.Top = botnAnalitycs.Top;
@@ -59,7 +69,7 @@ namespace kursgost
             botnAnalitycs.BackColor = Color.FromArgb(0, 128, 128);
         }
 
-        private void bontCalendar_Click(object sender, EventArgs e)
+        private void bontCalendar_Click(object sender, EventArgs e)//персонал
         {
             pnlNav.Height = bontCalendar.Height;
             pnlNav.Top = bontCalendar.Top;
@@ -67,7 +77,7 @@ namespace kursgost
             bontCalendar.BackColor = Color.FromArgb(0, 128, 128);
         }
 
-        private void Contact_Click(object sender, EventArgs e)
+        private void Contact_Click(object sender, EventArgs e)//служба пооддержки
         {
             pnlNav.Height = Contact.Height;
             pnlNav.Top = Contact.Top;
@@ -83,22 +93,22 @@ namespace kursgost
             Setings.BackColor = Color.FromArgb(0, 128, 128);
         }
         //редактируем события для конопок
-        private void botnDashboard_Leave(object sender, EventArgs e)
+        private void botnDashboard_Leave(object sender, EventArgs e)//доступные номера
         {
             botnDashboard.BackColor = Color.FromArgb(47, 79, 79);
         }
 
-        private void botnAnalitycs_Leave(object sender, EventArgs e)
+        private void botnAnalitycs_Leave(object sender, EventArgs e)//все номера
         {
             botnAnalitycs.BackColor = Color.FromArgb(47, 79, 79);
         }
 
-        private void bontCalendar_Leave(object sender, EventArgs e)
+        private void bontCalendar_Leave(object sender, EventArgs e)//персонал
         {
             bontCalendar.BackColor = Color.FromArgb(47, 79, 79);
         }
 
-        private void Contact_Leave(object sender, EventArgs e)
+        private void Contact_Leave(object sender, EventArgs e)//служба пооддержки
         {
             Contact.BackColor = Color.FromArgb(47, 79, 79);
         }
@@ -109,7 +119,6 @@ namespace kursgost
 
         }
 
-
-
+ 
     }
 }

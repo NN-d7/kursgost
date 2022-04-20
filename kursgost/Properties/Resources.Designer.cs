@@ -113,9 +113,39 @@ namespace kursgost.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1455554848_line_64_icon_icons_com_53332 {
+            get {
+                object obj = ResourceManager.GetObject("1455554848_line-64_icon-icons.com_53332", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1492790846_9cancel_84247 {
+            get {
+                object obj = ResourceManager.GetObject("1492790846-9cancel_84247", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _172626_user_male_icon {
             get {
                 object obj = ResourceManager.GetObject("172626_user_male_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1904666_calculate_close_delete_hide_minimize_minus_remove_122516 {
+            get {
+                object obj = ResourceManager.GetObject("1904666-calculate-close-delete-hide-minimize-minus-remove_122516", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -146,6 +176,36 @@ namespace kursgost.Properties {
         internal static System.Drawing.Bitmap a4a58852928c1eb6f86d12ca330203_unscreen1 {
             get {
                 object obj = ResourceManager.GetObject("a4a58852928c1eb6f86d12ca330203-unscreen1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap android_search_icon_icons_com_50501 {
+            get {
+                object obj = ResourceManager.GetObject("android-search_icon-icons.com_50501", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap right_up_expand_arrows_icon_214477 {
+            get {
+                object obj = ResourceManager.GetObject("right_up_expand_arrows_icon_214477", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap window_maximize_icon_137012 {
+            get {
+                object obj = ResourceManager.GetObject("window_maximize_icon_137012", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
